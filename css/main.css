@@ -1,0 +1,186 @@
+/* menú hamburguesa */
+.main-hamburger {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  height: 2px;
+  width: 24px;
+  background: #d0d0d0;
+}
+
+.main-hamburger::before, .main-hamburger::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 24px;
+  display: block;
+  background: #d0d0d0;
+}
+
+.main-hamburger::before {
+  top: -8px;
+}
+
+.main-hamburger::after {
+  top: 8px;
+}
+/* fin de menú hamburguesa */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.bg-reverse {
+  background-color: #383e42;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+nav {
+  padding: 14px;
+  overflow: hidden;
+}
+
+.nav-left {
+  font-size: 1.25rem;
+  float: left;
+  padding-left: 35px;
+}
+
+.nav-right {
+  float: right;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-header {
+  background-image: url("../assets/images/img_principal_one.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.overlay {/*contraste*/
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5rem 0;
+}
+
+.txt-cont, figure {
+  display: inline-block;
+  color: #393939;
+  padding: 3rem 4.5rem;
+  display: inline-block;
+  align-self: center;  
+  width: 100%;
+}
+
+.text-rock p,.txt-box {
+  line-height: 1.5;
+}
+.img{
+width: 100%;
+}
+
+.gallery-fig{
+  width: 100%;
+}
+footer {
+  padding: 3rem;
+}
+.section-date {
+padding: 3rem 4.5rem;
+}
+.col-section {
+width: 100%;  
+}
+.txt-box{
+display: inline-block;
+margin: 4%;
+}
+.cont-box-txt{
+border:1px solid gray;
+padding: 0px;
+}
+.btn {
+  background-color: #007bff; 
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: white;
+  margin: 10px 3px;
+}
+.button{
+border:1px solid gray;
+width: 100%;
+}
+.position{
+text-align: center;
+}
+.view-mobile {
+  display: block;
+}
+
+.view-desktop {
+  display: none;
+}
+
+/* estilos solo para desktop*/
+ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+@media (min-width: 768px) {
+   .col-section {
+    width: 65%;
+    float: left;
+    
+  }
+.section-date{
+  display: inline-block;
+   margin: 4% 0 0 2%;
+   width: 25%;
+  
+}
+  section {
+    overflow: auto;
+    display: flex;
+  }
+  .overlay {
+    padding: 10rem 0;
+  }
+  
+  .view-mobile {
+    display: none;
+  }
+  
+  .view-desktop {
+    display: block;
+  }
+}
+/*
+@media (min-width: 1200px) {
+  section{
+    margin: 0 10rem;
+  }
+}*/
