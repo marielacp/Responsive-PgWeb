@@ -9,6 +9,29 @@
 /* Grid */
 
 .container {
+  width: 100%;
+ /* margin: 2% auto;*/
+  text-align: center;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+[class*="col-"] {  
+  float: left;
+  
+
+/*  margin-right: 2%;*/
+
+}
+/*.container {
   margin: 0 auto;
   max-width: 1366px;
   width: 100%;
@@ -23,7 +46,7 @@
 [class*='col-'] {
   float: left;
 }
-
+*/
 .col-xs-1 {
   width: 8.33333333%;
 }
@@ -62,6 +85,7 @@
 
 .col-xs-10 {
   width: 83.33333333%;
+  
 }
 
 .col-xs-11 {
